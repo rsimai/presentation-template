@@ -123,7 +123,13 @@ The files must be served by a local web server.
 If you have Python installed, the easiest way is probably to run this
 one-line command from the repository:
 
+Python 2:
+
     python -m SimpleHTTPServer 8000
+
+Python 3:
+
+    python -m http.server 8000
 
 #### Apache
 
