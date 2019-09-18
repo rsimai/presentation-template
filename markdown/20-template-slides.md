@@ -47,6 +47,31 @@ Before loading up your presentation with bulleted lists, make sure to
 # Section break (style 4)
 
 
+<!-- .slide: data-state="normal" id="colums" data-timing="10s" -->
+# Simple columns layout
+
+<div class="col-container">
+
+<div class="col">
+<h3> First column</h3>
+<ul>
+<li> a few
+<li> list items
+  <ul>
+  <li> with a sublist </li>
+  </ul></li>
+</ul>
+</div>
+
+<div class="col">
+<h3>Second column</h3>
+<ul>
+<li>with more</li>
+<li>list items</li>
+</ul>
+</div>
+
+
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->
 ## Code syntax highlighting
 

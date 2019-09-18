@@ -20,7 +20,7 @@ use the SUSE presentation template.
     allow, we suggest moving content to another slide.
 
 
-<!-- .slide: data-state="normal" id="color-palette" -->
+<!-- .slide: class="col-container" data-state="normal" id="color-palette" -->
 ## Color Palette
 
 <div class="palette-text">
