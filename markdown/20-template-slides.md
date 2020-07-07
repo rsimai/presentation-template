@@ -184,7 +184,7 @@ Sizes can vary: append `-small` or `-large` to the style name
 <div class="breadcrumbs">Breadcrumbs</div>
 
 Works out of the box using [`highlight.js`](https://highlightjs.org/)
-and a custom color theme with official SUSE colors:
+and the Monokai theme:
 
 ```js
 Reveal.addEventListener('somestate', function() {
