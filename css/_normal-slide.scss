@@ -104,6 +104,10 @@
             max-width: 80%;
             max-height: 80%;
         }
+
+        strong {
+            color: $jungle;
+        }
     }
 
     @include slide-numbers;
