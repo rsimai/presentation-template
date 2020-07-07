@@ -163,6 +163,21 @@ Before loading up your presentation with bulleted lists, make sure to
 [read up on whether that's a good idea](https://www.google.com/search?q=slides+bullets).
 
 
+<!-- .slide: data-state="normal" id="columns" data-timing="20s" data-menu-title="Content on two columns" -->
+## Content on two columns
+
+<div class="breadcrumbs">Breadcrumbs</div>
+
+This slide has content on 2 columns.
+Sizes can vary: append `-small` or `-large` to the style name
+
+<!-- .element class="col1" -->
+
+![Image in column two](../images/beach-pano-16x9.jpg)
+
+<!-- .element class="col2" -->
+
+
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->
 ## Code syntax highlighting
 

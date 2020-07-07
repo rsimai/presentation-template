@@ -52,6 +52,39 @@
             color: $pine;
         }
 
+        .col1 {
+            width: 45%;
+            float: left;
+        }
+
+        .col2 {
+            width: 45%;
+            position: absolute;
+            left: 48%;
+        }
+
+        .col1-small {
+            width: 20%;
+            float: left;
+        }
+
+        .col2-large {
+            width: 70%;
+            position: absolute;
+            left: 33%;
+        }
+
+        .col1-large {
+            width: 70%;
+            float: left;
+        }
+
+        .col2-small {
+            width: 20%;
+            position: absolute;
+            left: 70%;
+        }
+
         p {
             margin-bottom: 0.4em;
         }
