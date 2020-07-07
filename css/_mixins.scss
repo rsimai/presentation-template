@@ -1,10 +1,5 @@
 @mixin slide-numbers($fg: $pine, $bg: white) {
     .slide-number-wrapper {
-        width: auto;
-        height: 100%;
-        left: 2%;
-        bottom: 2%;
-
         > a {
             position: absolute;
             height: 100%;
@@ -35,7 +30,7 @@
                         border-bottom: thin $jungle solid;
                         width: 4em;
                         position: absolute;
-                        top: 1em;
+                        top: 0;
                         left: 3em;
                     }
                 }
