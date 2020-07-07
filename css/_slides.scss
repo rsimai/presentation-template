@@ -150,19 +150,11 @@
     tt, code, code * {
         font-family: "Courier New", monospace !important;
         font-weight: bold;
-        background-color: transparent;
-    }
-
-    tt, code {
-        color: $medium-dark-neutral;
-        text-shadow: none;
-        text-transform: none;
     }
 
     pre {
         box-shadow: none;
         padding: 13px 13px;
-        background-color: $tint-neutral;
     }
 
     pre code {
