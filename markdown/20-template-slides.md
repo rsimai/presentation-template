@@ -220,15 +220,3 @@ end
 <a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
     <img alt="Beach pano" src="images/beach-pano-16x9.jpg"/>
 </a>
-
-
-<!-- .slide: data-state="blank-slide" class="full-screen" id="full-screen-image-2" data-menu-title="Tall full screen image" data-timing="10s" -->
-<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
-    <img alt="Beach pano" src="images/beach-pano-tall.jpg"/>
-</a>
-
-
-<!-- .slide: data-state="blank-slide" class="full-screen" id="full-screen-image-3" data-menu-title="Wide full screen image" data-timing="10s" -->
-<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
-    <img alt="Beach pano" src="images/beach-pano-wide.jpg"/>
-</a>
