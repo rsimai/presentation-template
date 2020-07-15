@@ -118,11 +118,12 @@
 
     a {
         text-decoration: none;
-        color: $bright-blue !important;
+        color: $jungle !important;
     }
 
     a:hover {
-        color: $bright-royal !important;
+        color: $jungle !important;
+        text-decoration: underline;
     }
 
     .progress span {
@@ -196,14 +197,5 @@
             border: $debug 1px blue;
             padding: 0 0;
         }
-    }
-
-    .internal-use-footer {
-        font-size: 1.4rem;
-        color: $bright-magenta;
-        font-weight: bold;
-        position: absolute;
-        bottom: 0%;
-        width: 100%;
     }
 }
