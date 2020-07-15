@@ -65,7 +65,7 @@
 1. Section Title
 > Description of the section
 
-<!-- .element class="col1" -->
+<!-- .element class="column" -->
 
 1. Section Title
 > Description of the section
@@ -82,7 +82,7 @@
 1. Section Title
 > Description of the section
 
-<!-- .element class="col2" -->
+<!-- .element class="column" -->
 
 
 <!-- .slide: data-state="normal contact" id="contact" data-timing="20s" data-menu-title="Contact" -->
@@ -171,11 +171,11 @@ Before loading up your presentation with bulleted lists, make sure to
 This slide has content on 2 columns.
 Sizes can vary: append `-small` or `-large` to the style name
 
-<!-- .element class="col1" -->
+<!-- .element class="column" -->
 
 ![Image in column two](../images/beach-pano-16x9.jpg)
 
-<!-- .element class="col2" -->
+<!-- .element class="column" -->
 
 
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->

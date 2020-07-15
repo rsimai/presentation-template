@@ -5,7 +5,7 @@
         section {
             counter-reset: toc-counter;
             ol {
-                list-style: none;
+                list-style-type: none;
                 padding-left: 1.5em;
 
                 li {
@@ -13,11 +13,18 @@
                     color: $jungle;
                     font-size: 3rem;
                     margin: 0;
+                    line-height: 0;
 
                     &:before {
                         content: counter(toc-counter, decimal-leading-zero);
-                        position: absolute;
-                        left: 0;
+                        margin-left: -1.8em;
+                        display: inline;
+                        margin-right: .5em;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        display: inline;
                     }
 
                     blockquote {
@@ -32,22 +39,9 @@
                     }
                 }
             }
-
-            .col1 {
-                width: 45%;
-            }
-            .col2 {
-                width: 45%;
-                position: absolute;
-                left: 48%;
-                top: 20%;
-
-                li {
-                    &:before {
-                        left: -0.5em;
-                    }
-                }
-            }
+        }
+        .column {
+            width: 40%;
         }
     }
 }
