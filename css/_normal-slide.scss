@@ -52,37 +52,22 @@
             color: $pine;
         }
 
-        .col1 {
+        .column {
             width: 45%;
-            float: left;
+            display: inline-block;
+            vertical-align: top;
         }
 
-        .col2 {
-            width: 45%;
-            position: absolute;
-            left: 48%;
-        }
-
-        .col1-small {
+        .column-small {
             width: 20%;
-            float: left;
+            display: inline-block;
+            vertical-align: top;
         }
 
-        .col2-large {
+        .column-large {
             width: 70%;
-            position: absolute;
-            left: 33%;
-        }
-
-        .col1-large {
-            width: 70%;
-            float: left;
-        }
-
-        .col2-small {
-            width: 20%;
-            position: absolute;
-            left: 70%;
+            display: inline-block;
+            vertical-align: top;
         }
 
         p {
