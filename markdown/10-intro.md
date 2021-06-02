@@ -4,16 +4,13 @@
     <h2>Guidelines and Template</h2>
 </div>
 
-<div class="date-location">March 20, 2020, CITY NAME</div>
+<div class="date-location">31 May 2021</div>
 
 
 <!-- .slide: data-state="normal" id="template-agenda" data-menu-title="Agenda" -->
-## Contents / agenda
+# Contents / agenda
 
-<h3>
-Welcome to the [`reveal.js`](https://github.com/hakimel/reveal.js/)
-version of the guidelines and template for SUSE presentations.
-</h3>
+### Welcome to the [`reveal.js`](https://github.com/hakimel/reveal.js/) version of the guidelines and template for SUSE presentations.
 
 It contains the following slides (you can also press `m` at any
 time to reveal a navigation menu):

@@ -3,24 +3,27 @@
 .toc .reveal {
     .slides {
         section {
-            counter-reset: toc-counter;
+            h1 {
+                position: relative;
+                width: 35%;
+                top: 35%;
+                margin: 0;
+            }
+
             ol {
-                list-style-type: none;
                 padding-left: 1.5em;
+                left: 45%;
+                position: relative;
+
+                .highlight {
+                    color: $persimon;
+                }
 
                 li {
-                    counter-increment: toc-counter;
                     color: $jungle;
                     font-size: 3rem;
-                    margin: 0;
+                    margin-top: 3rem;
                     line-height: 0;
-
-                    &:before {
-                        content: counter(toc-counter, decimal-leading-zero);
-                        margin-left: -1.8em;
-                        display: inline;
-                        margin-right: .5em;
-                    }
 
                     p {
                         margin-bottom: 0;
@@ -39,9 +42,6 @@
                     }
                 }
             }
-        }
-        .column {
-            width: 40%;
         }
     }
 }

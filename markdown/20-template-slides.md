@@ -1,101 +1,46 @@
 <!-- .slide: data-state="cover" id="cover-page" data-timing="20" -->
-<div class="date-location">March 20, 2020, CITY NAME</div>
+<div class="date-location">31 May 2021</div>
 
 <div class="title">
-    <h1>Presentation Title</h1>
-    <h2>Subhead or Second Line</h2>
+    <h1>This is a title slide with an infinity image</h1>
+    <h2>This is a subheading if you wish to add further details. Ignore if you don't.</h2>
 </div>
 
 
-<!-- .slide: data-state="cover-image" id="cover-page-image" data-timing="20" data-menu-title="Cover slide with QR code" -->
+<!-- .slide: data-state="cover-alternate" id="cover-page-alternate" data-timing="20" data-menu-title="Cover slide (alternate)" -->
 <div class="title">
-    <h1>SUSE<sub>&reg;</sub> Presentation</h1>
-    <h2>Guidelines and Template</h2>
+    <h1>This is a title slide with an infinity image</h1>
+    <h2>This is a subheading if you wish to add further details. Ignore if you don't.</h2>
 </div>
 
-<div class="date-location">March 20, 2020, CITY NAME</div>
-
-<div class="image">
-    <div class="qr-embedded-wrapper">
-        <div class="qrcode" id="qrcode-talk-embedded" />
-    </div>
-    <h2><a href="https://goo.gl/FIXME" target="_blank"
-           id="talk-embedded">https://goo.gl/FIXME</a></h2>
-</div>
+<div class="date-location">31 May 2021</div>
 
 
-<!-- .slide: data-state="normal toc" id="agenda-1col" data-timing="20s" data-menu-title="Agenda with one column" -->
-## Agenda with one column
+<!-- .slide: data-state="normal toc" id="agenda" data-timing="20s" data-menu-title="Agenda with one column" -->
+#  Agenda
 
-<div class="breadcrumbs">Breadcrumbs</div>
+1. Section One
+> Add session details
 
-1. Section Title
-> Description of the section reperum volest licius
+1. Section Two
+> Add session details
 
-1. Section Title
-> Description of the section reperum volest licius
+1. Lunch
+> Add session details
 
-1. Section Title
-> Description of the section reperum volest licius
-
-1. Section Title
-> Description of the section reperum volest licius
-
-1. Section Title
-> Description of the section reperum volest licius
-
-
-<!-- .slide: data-state="normal toc" id="agenda-2col" data-timing="20s" data-menu-title="Agenda with two columns" -->
-## Agenda with two columns
-
-<div class="breadcrumbs">Breadcrumbs</div>
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-<!-- .element class="column" -->
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-1. Section Title
-> Description of the section
-
-<!-- .element class="column" -->
+1. Section Three
+> Add session details
 
 
 <!-- .slide: data-state="normal contact" id="contact" data-timing="20s" data-menu-title="Contact" -->
-## Contact
-
-<div class="breadcrumbs">Breadcrumbs</div>
+# Introducing the team
 
 <div class="contacts">
-  <div class="contact">
+  <div class="contact midnight">
     <figure class="picture">
-      <img data-src="../images/SUSE/user-placeholder.svg" alt="Picture" />
+      <img data-src="../images/SUSE/user-placeholder.png" alt="Picture" />
     </figure>
-    <div class="name">Firstname Lastname</div>
+    <div class="name">Firstname<br/>Lastname</div>
     <div class="job">Job Title</div>
     <div class="email">firstname.lastname@suse.com</div>
     <div class="phone">+49 123 456 789</div>
@@ -103,29 +48,29 @@
 
   <div class="contact">
     <figure class="picture">
-      <img data-src="../images/SUSE/user-placeholder.svg" alt="Picture" />
+      <img data-src="../images/SUSE/user-placeholder.png" alt="Picture" />
     </figure>
-    <div class="name">Firstname Lastname</div>
+    <div class="name">Firstname<br/>Lastname</div>
     <div class="job">Job Title</div>
     <div class="email">firstname.lastname@suse.com</div>
     <div class="phone">+49 123 456 789</div>
   </div>
 
-  <div class="contact">
+  <div class="contact waterhole">
     <figure class="picture">
-      <img data-src="../images/SUSE/user-placeholder.svg" alt="Picture" />
+      <img data-src="../images/SUSE/user-placeholder.png" alt="Picture" />
     </figure>
-    <div class="name">Firstname Lastname</div>
+    <div class="name">Firstname<br/>Lastname</div>
     <div class="job">Job Title</div>
     <div class="email">firstname.lastname@suse.com</div>
     <div class="phone">+49 123 456 789</div>
   </div>
 
-  <div class="contact">
+  <div class="contact persimon">
     <figure class="picture">
-      <img data-src="../images/SUSE/user-placeholder.svg" alt="Picture" />
+      <img data-src="../images/SUSE/user-placeholder.png" alt="Picture" />
     </figure>
-    <div class="name">Firstname Lastname</div>
+    <div class="name">Firstname<br/>Lastname</div>
     <div class="job">Job Title</div>
     <div class="email">firstname.lastname@suse.com</div>
     <div class="phone">+49 123 456 789</div>
@@ -133,26 +78,42 @@
 </div>
 
 
-<!-- .slide: data-state="divider-image" id="divider-image" data-timing="20s" data-menu-title="Divider with image" -->
+<!-- .slide: data-state="divider" id="divider" data-timing="20s" data-menu-title="Divider with image" -->
 # This is a divider with an image
+
+## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
 
 <a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
     <img alt="Beach pano" src="images/beach-pano-16x9.jpg"/>
 </a>
 
 
-<!-- .slide: data-state="divider" id="divider-no-image" data-timing="20s" data-menu-title="Divider without image" -->
-# This is a divider without an image
+<!-- .slide: data-state="subdivider" id="subdivider" data-timing="20s" data-menu-title="Subdivider slide" -->
+# This is a sub divider slide
+
+## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
 
 
-<!-- .slide: data-state="subchapter" id="subchapter" data-timing="20s" data-menu-title="Subchapter page" -->
-# This is a sub chapter page without an image
+<!-- .slide: data-state="divider blue" id="divider-blue" data-timing="20s" data-menu-title="Blue divider" -->
+# This is a blue divider with an image
+
+## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
+
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-16x9.jpg"/>
+</a>
+
+
+<!-- .slide: data-state="subdivider blue" id="subdivider-blue" data-timing="20s" data-menu-title="Blue subdivider slide" -->
+# This is a sub divider slide
+
+## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
 
 
 <!-- .slide: data-state="normal" id="nested-lists" data-timing="20s" data-menu-title="Standard text slide" -->
-## Slide title
+# Slide title
 
-<div class="breadcrumbs">Breadcrumbs</div>
+## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
 
 *   First-level bullet
     *   Second-level bullet
@@ -164,9 +125,7 @@ Before loading up your presentation with bulleted lists, make sure to
 
 
 <!-- .slide: data-state="normal" id="columns" data-timing="20s" data-menu-title="Content on two columns" -->
-## Content on two columns
-
-<div class="breadcrumbs">Breadcrumbs</div>
+# Content on two columns
 
 This slide has content on 2 columns.
 Sizes can vary: append `-small` or `-large` to the style name
@@ -179,9 +138,7 @@ Sizes can vary: append `-small` or `-large` to the style name
 
 
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->
-## Code syntax highlighting
-
-<div class="breadcrumbs">Breadcrumbs</div>
+# Code syntax highlighting
 
 Works out of the box using [`highlight.js`](https://highlightjs.org/)
 and the Monokai theme:

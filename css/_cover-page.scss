@@ -1,6 +1,6 @@
 // Styling for cover page of presentation
 
-.cover .reveal {
+@mixin cover($bg_image) {
     .slides {
         $bg-height: 100%;
         $left-margin: 0%;
@@ -15,34 +15,32 @@
         }
 
         background:
-            url(../images/SUSE/title-dot-line.png)
-               0% 20%
-             / 100% 70%
-               no-repeat,
             url(../images/SUSE/SUSE-logo.svg)
-               100% 100%              //  x/y positions
+               5% 5%              //  x/y positions
              / 15% 15%              //  x/y sizes
                 no-repeat,
-            url(../images/SUSE/dots-small.svg)
-               70% 110%
-             / 40% 30%
+            url('../images/SUSE/' + $bg_image + '.png')
+               0% 100%
+             / 100% 40%
                no-repeat,
             $pine;
 
         position: relative;
 
         .date-location {
-            color: $salmon;
+            color: $jungle;
+            text-transform: uppercase;
             font-size: 1.5rem;
             position: absolute;
-            top: 10%;
-            left: 20%;
+            top: 20%;
+            left: 1%;
         }
 
         .title {
             position: absolute;
-            top: 20%;
-            left: 20%;
+            top: 30%;
+            width: 100%;
+            left: 1%;
 
             h1, h2, h3, h4, h5, h6 {
                 color: white;
@@ -50,10 +48,15 @@
 
             h1 {
                 font-size: 4rem;
+                width: 45%;
             }
 
             h2 {
-                font-size: 3rem;
+                font-size: 2.5rem;
+                position: absolute;
+                left: 55%;
+                top: 0%;
+                width: 35%;
             }
 
             h3 {
@@ -97,4 +100,13 @@
     }
 
     @include no-slide-numbers;
+}
+
+.cover .reveal {
+    @include cover("infinity");
+}
+
+
+.cover-alternate .reveal {
+    @include cover("infinity-mars");
 }

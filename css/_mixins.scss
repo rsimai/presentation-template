@@ -1,3 +1,36 @@
+@mixin copyright($fg: $pine, $bg: white) {
+    $chameleon: if($fg == white, 'chameleon-white.svg', 'chameleon.svg');
+    .slide-number-wrapper {
+        > a {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:before {
+            position: absolute;
+            left: 10%;
+            bottom: $section-top-margin;
+            content: "Copyright © SUSE 2021";
+            margin-left: 6em;
+            font-size: 0.5em;
+            color: $fg;
+            z-index: 1;
+        }
+        &:after {
+            content: '';
+            width: 5%;
+            height: 5%;
+            position: absolute;
+            bottom: $section-top-margin - 1%;
+            left: 7%;
+            background: url('../images/SUSE/' + $chameleon)
+              0% 0% / 100% 100%;
+            z-index: 1;
+        }
+    }
+}
+
 @mixin slide-numbers($fg: $pine, $bg: white) {
     .slide-number-wrapper {
         > a {
@@ -14,7 +47,7 @@
                 // are part of this theme anyway.
                 display: inline-block !important;
 
-                left: $section-left-margin;
+                left: $section-width;
                 top: 92%;
                 font-size: 5pt;
                 border-radius: 20%;
@@ -24,26 +57,10 @@
                     font-size: 3em;
                 }
 
-                .slide-number-b {
-                    &:after {
-                        content: "";
-                        border-bottom: thin $jungle solid;
-                        width: 4em;
-                        position: absolute;
-                        top: 0;
-                        left: 3em;
-                    }
-                }
-
-                &:after {
-                    content: "Copyright © 2020";
-                    margin-left: 6em;
-                    font-size: 3em;
-                    color: $fg;
-                }
             }
         }
     }
+    @include copyright($fg, $bg);
 }
 
 @mixin no-slide-numbers {

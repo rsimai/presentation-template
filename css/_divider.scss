@@ -1,35 +1,92 @@
-// Styling for the divider without image slides
+// Styling for the dividers
+
+.blue .reveal {
+    .slides {
+        background:
+            url(../images/SUSE/top-bar.png)
+               0% 0%
+            / 100% 0.5%
+               no-repeat,
+            linear-gradient(180deg, $midnight 70%, $waterhole 30%) !important;
+    }
+}
 
 .divider .reveal {
     .slides {
         background:
-            url(../images/SUSE/SUSE.png)
-               95% 95%              //  x/y positions
-             / 5% 3%              //  x/y sizes
-                no-repeat,
-            url(../images/SUSE/separator2-dot-line.png)
-               0% 130px
-             / 95% 95%
+            url(../images/SUSE/top-bar.png)
+               0% 0%
+            / 100% 0.5%
                no-repeat,
-            url(../images/SUSE/dots-big.png)
-               95% 5%
-             / 40% 30%
-               no-repeat,
-            linear-gradient(180deg, $jungle 90%, white 10%);
+            linear-gradient(180deg, $pine 70%, $jungle 30%);
 
-        h1 {
+        img {
+            width: 60%;
+            height: 85%;
+            position: relative;
+            border-radius: 5%;
+            display: block;
+            left: 40%;
+        }
+
+        h1, h2 {
             text-align: left;
             margin-bottom: 0.8em;
-            color: $pine;
-            font-size: 5rem;
+            color: white;
+            font-size: 4rem;
             font-weight: normal;
             float: left;
             width: 38%;
-            top: 40%;
+            top: 30%;
             position: absolute;
+        }
+
+        h2 {
+            font-size: 1em;
+            top: 65%;
         }
     }
 
-    @include slide-numbers;
+    @include copyright(white, $pine);
+}
+
+
+.subdivider .reveal {
+    .slides {
+        background:
+            url(../images/SUSE/top-bar.png)
+               0% 0%
+            / 100% 0.5%
+               no-repeat,
+            $jungle;
+
+        img {
+            width: 60%;
+            height: 85%;
+            position: relative;
+            border-radius: 5%;
+            display: block;
+            left: 40%;
+        }
+
+        h1, h2 {
+            text-align: left;
+            margin-bottom: 0.8em;
+            color: white;
+            font-size: 4rem;
+            font-weight: normal;
+            float: left;
+            width: 38%;
+            top: 30%;
+            position: absolute;
+        }
+
+        h2 {
+            font-size: 1em;
+            top: 65%;
+        }
+    }
+
+    @include copyright(white, $pine);
 }
 

@@ -2,15 +2,6 @@
 
 .contact .reveal {
     .slides {
-        background:
-            url(../images/SUSE/SUSE.png)
-               95% 95%              //  x/y positions
-             / 5% 3%              //  x/y sizes
-               no-repeat,
-            url(../images/SUSE/contact-dot-line.png)
-               0% 100%
-             / 88% 30%
-                no-repeat;
 
         .contacts {
             display: flex;
@@ -21,37 +12,53 @@
             width: 92%;
         }
 
+        .persimon {
+            background-color: $persimon !important;
+        }
+
+        .midnight {
+            background-color: $midnight !important;
+        }
+
+        .waterhole {
+            background-color: $waterhole !important;
+        }
+
         .contact {
-            width: 22%;
             flex-basis: 25%;
             float: left;
-            height: 60%;
-            padding: 0.5em;
+            height: 70%;
+            margin: 0.5em;
+            background-color: $jungle;
 
-            color: $pine;
+            color: white;
 
             figure {
-                height: 85%;
+                height: 70%;
                 width: 100%;
-                border-radius: 15%;
+                margin: 0;
                 img {
-                    width: 100%;
+                    max-width: 100%;
                     height: 100%;
+                    margin: 0;
                 }
             }
 
             .name {
-                color: $jungle;
                 font-size: 0.8em;
                 margin-bottom: 1em;
+                margin-left: 20px;
             }
 
             .job {
-                font-size: 0.8em;
+                font-size: 0.4em;
+                margin-bottom: 1em;
+                margin-left: 20px;
             }
 
             .email, .phone {
-                font-size: 0.6em;
+                font-size: 0.4em;
+                margin-left: 20px;
             }
         }
     }

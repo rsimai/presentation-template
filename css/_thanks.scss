@@ -15,17 +15,13 @@
         }
 
         background:
-            url(../images/SUSE/thanks-dot-line.png)
-               0% 20%
-             / 100% 70%
-               no-repeat,
             url(../images/SUSE/SUSE-logo.svg)
-               0% 98%              //  x/y positions
+               5% 5%              //  x/y positions
              / 15% 15%              //  x/y sizes
                 no-repeat,
-            url(../images/SUSE/dots-small.svg)
-               98% 110%
-             / 40% 30%
+            url('../images/SUSE/infinity.png')
+               0% 100%
+             / 100% 40%
                no-repeat,
             $pine;
 
@@ -33,8 +29,7 @@
 
         h1 {
             position: absolute;
-            top: 22%;
-            left: 45%;
+            top: 40%;
 
             color: white;
             font-size: 4rem;
@@ -44,6 +39,31 @@
         }
 
         text-align: inherit;
+
+        p, div {
+            color: white;
+            font-size: 0.7em;
+        }
+
+        .more {
+            position: absolute;
+            left: 25%;
+            bottom: 50%;
+        }
+
+        .address {
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+        }
+
+        .legal {
+            position: absolute;
+            font-size: 0.4em;
+            width: 20%;
+            left: 70%;
+            bottom: 50%;
+        }
     }
 
     @include no-slide-numbers;

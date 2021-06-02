@@ -1,55 +1,37 @@
 // Styling for normal slides
 
-.dots .reveal {
-    .slides {
-        background:
-            url(../images/SUSE/SUSE.png)
-               95% 95%              //  x/y positions
-             / 5% 3%              //  x/y sizes
-                no-repeat,
-            url(../images/SUSE/dots-small-black.svg)
-               70% 110%
-             / 40% 30%
-                no-repeat !important;
-    }
-}
-
 .normal .reveal {
     $slide-width: 100% - 2 * $section-left-margin;
 
     .slides {
         background:
-            url(../images/SUSE/SUSE.png)
-               95% 95%              //  x/y positions
-             / 5% 3%              //  x/y sizes
-                no-repeat;
+            url(../images/SUSE/top-bar.png)
+               0% 0%
+            / 100% 0.5%
+               no-repeat;
 
         text-align: inherit;
         color: $pine !important;
-
-        .breadcrumbs {
-            color: $jungle;
-            text-transform: uppercase;
-            font-size: 0.6em;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
 
         > section {
             width: $slide-width;
         }
 
         h1 {
-            margin-bottom: 0.8em;
+            margin-bottom: 2em;
             color: $pine;
         }
 
         h2 {
-            margin-bottom: 0.8em;
-            font-size: 4rem;
+            margin-top: 0;
+            margin-bottom: 2em;
+            font-size: 1em;
             font-weight: normal;
             color: $pine;
+        }
+
+        h1 + h2 {
+            margin-top: -3em;
         }
 
         .column {
