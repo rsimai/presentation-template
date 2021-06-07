@@ -10,8 +10,11 @@
         margin: 0;
 
         > section {
-            width: 100%;
-            height: 100%;
+            /* Margin percentages (e.g. 5%) are treated as being relative to the
+            containing element's *width*, even the top and bottom margins. */
+            margin: $section-top-margin / $aspect-ratio $section-left-margin;
+            width: $section-width;
+            height: $section-height;
         }
 
         background:

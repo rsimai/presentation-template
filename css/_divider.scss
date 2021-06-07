@@ -43,7 +43,7 @@
 
         h2 {
             font-size: 1em;
-            top: 65%;
+            top: 70%;
         }
     }
 
@@ -83,10 +83,47 @@
 
         h2 {
             font-size: 1em;
-            top: 65%;
+            top: 70%;
         }
     }
 
     @include copyright(white, $pine);
 }
 
+
+/* divider customization to have an image covering the right-half part of the slide entirely */
+#divider, #divider-blue,
+#subdivider, #subdivider-blue {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    h1, h2 {
+        /* Margin percentages (e.g. 5%) are treated as being relative to the
+        containing element's *width*, even the top and bottom margins. */
+        margin: $section-top-margin / $aspect-ratio $section-left-margin;
+    }
+
+    a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            height: 100%;
+            max-height: 100%;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            left: auto;
+            right: auto;
+            border-radius: 0;
+            padding-top: 4px;
+        }
+    }
+}
