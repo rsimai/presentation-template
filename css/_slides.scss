@@ -31,13 +31,10 @@
             // Need to keep margins with aspect ratio in order to avoid cropping.
             $fs-top-margin: $fs-left-margin / $aspect-ratio;
 
-            width: $slide-width - 2 * $fs-left-margin;
-            height: $slide-height - 2 * $fs-top-margin;
+            width: $slide-width;
+            height: $slide-height;
 
-            // Shift back from <section> offset to top-left edge of slide,
-            // then add new margin.
-            margin-left: -($slide-width * $section-left-margin / 100%) + $fs-left-margin;
-            margin-top: -($slide-height * $section-top-margin / 100%) + $fs-top-margin;
+            margin: 0;
 
             // Make sure the max dimensions don't get in the way.
             max-width: 1000%;
