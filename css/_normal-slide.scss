@@ -90,6 +90,10 @@
 	    font-variant: inherit;
 	}
 
+	// reveal.js sets .reveal .hljs height to 100%, always (??)
+	.hljs {
+	    min-height: 0;
+	}
     }
 
     @include slide-numbers;
