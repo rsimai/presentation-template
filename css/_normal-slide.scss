@@ -75,6 +75,12 @@
         strong {
             color: $jungle;
         }
+
+	// Proper distance below tables
+	table {
+            margin-bottom: 1em;
+	}
+
     }
 
     @include slide-numbers;
