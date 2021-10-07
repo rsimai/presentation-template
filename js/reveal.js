@@ -1,6 +1,5 @@
-// More info about config & dependencies:
+// More info about config
 // - https://github.com/hakimel/reveal.js#configuration
-// - https://github.com/hakimel/reveal.js#dependencies
 Reveal.initialize({
     // If you change these, make sure $slide-width and $slide-height in
     // css/_variables.scss are also updated accordingly:
@@ -18,8 +17,11 @@ Reveal.initialize({
 
     defaultTiming: 120,
 
-    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-    transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+    // theme: "black", // this has no effect apparently, too many SUSE overrides
+    transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Optional libraries used to extend on reveal.js
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom, RevealMath ],
 
     menu: {
         themes: false,
@@ -29,16 +31,6 @@ Reveal.initialize({
         markers: true
     },
 
-    // Optional libraries used to extend on reveal.js
-    dependencies: [
-        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
-    ]
 });
 
 Reveal.configure({
