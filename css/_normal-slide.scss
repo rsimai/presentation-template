@@ -52,6 +52,19 @@
             vertical-align: top;
         }
 
+	.multicol {
+	    padding: 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: flex-start;
+	    margin-bottom: 2rem;
+	    // multi-column in LO template ~ 0.2"
+	    gap: 24px;
+	}
+	.col {
+	    flex: 1 0 1px;
+	}
+
         p {
             margin-bottom: 0.4em;
         }
