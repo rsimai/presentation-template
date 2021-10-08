@@ -29,21 +29,27 @@
             left: 40%;
         }
 
+	// divider slide ODS template (see _variables.scss)
+	// h1 32pt medium, top margin 3" (360), width 4" (480), left 0.8"
+	// h2 title 18pt light, top 5,5" (660)
         h1, h2 {
             text-align: left;
-            margin-bottom: 0.8em;
             color: white;
-            font-size: 4rem;
-            font-weight: normal;
             float: left;
-            width: 38%;
-            top: 30%;
+            width: 480px;
+	    left: $section-left-margin;
             position: absolute;
+	    margin: 0;
         }
 
+	h1 {
+	    bottom: 360px;
+	}
+
         h2 {
-            font-size: 1em;
-            top: 70%;
+	    // ODP: subheading: 18pt
+	    font-size: 30px;
+            top: 660px;
         }
     }
 
@@ -69,21 +75,26 @@
             left: 40%;
         }
 
+	// subdivider slide ODS template (see _variables.scss)
+	// h1 32pt medium, bottom 3.7" (404), width 4" (480), left 0.8"
+	// h2 title 18pt light, top 5,5" (660)
         h1, h2 {
             text-align: left;
-            margin-bottom: 0.8em;
             color: white;
-            font-size: 4rem;
-            font-weight: normal;
             float: left;
-            width: 38%;
-            top: 30%;
+            width: 480px;
+	    left: $section-left-margin;
             position: absolute;
+	    margin: 0;
         }
 
+	h1 {
+	    bottom: 360px;
+	}
+
         h2 {
-            font-size: 1em;
-            top: 70%;
+	    font-size: 30px;
+            top: 660px;
         }
     }
 
@@ -98,12 +109,6 @@
     width: 100%;
     height: 100%;
     padding: 0;
-
-    h1, h2 {
-        /* Margin percentages (e.g. 5%) are treated as being relative to the
-        containing element's *width*, even the top and bottom margins. */
-        margin: $section-top-margin / $aspect-ratio $section-left-margin;
-    }
 
     a {
         position: absolute;
