@@ -16,20 +16,32 @@
         > section {
             width: $slide-width;
         }
+	// normal slide
 
+	// There's ~1" between heading and slide text ("copy text")
+	// It's below the h1 heading if no subheading exists, below the h2 heading otherwise
+
+	// ODP: h1 headline 32pt (54px) medium, spacing 0.9, after 6pt, top 0.8"
         h1 {
-            margin-bottom: 2em;
+            margin-bottom: 120px;
             color: $pine;
         }
 
+	// ODP: h2 headline 20pt (35px) light, spacing 1.1, spacing after 6pt, top 1.2"
         h2 {
-            margin-top: 0;
-            margin-bottom: 2em;
             color: $pine;
         }
 
+	h3 {
+            margin-top: 0.2rem;
+            margin-bottom: 1.5rem;
+            color: $jungle;
+	}
+
+	// "Subheading": h2 direcly after h1 - large vertical space after h2
         h1 + h2 {
-            margin-top: -3em;
+            margin-bottom: 100px;
+            margin-top: -100px;
         }
 
         .column {

@@ -1,5 +1,15 @@
 // Styling for cover page of presentation
 
+// Currently unimplemented slide types from ODP template:
+//
+// title with large header font and no subheading
+//   h1 60pt (100px), top 1.6" (192), width 9" (1080)
+//
+// title slide with big picture (subheading at bottom)
+//   h1 32pt medium, width 7" (840), top 2.2" (264), left 0.8", height 1.5" (180)
+//   h2 18pt light, width 4.2" (304), height 1", top 4.2" (304)
+//   date: Poppins SemiBold 10pt (16), top 0.8"
+
 @mixin cover($bg_image) {
     .slides {
         $bg-height: 100%;
@@ -27,49 +37,60 @@
 
         position: relative;
 
+	// ODP: Poppins SemiBold 10pt, bottom 5"
         .date-location {
             color: $jungle;
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: 16px;
+	    font-weight: 600;
             position: absolute;
-            top: 20%;
-            left: 1%;
+            bottom: 660px - 60px;
+            left: 0;
+	    letter-spacing: 1px;
         }
 
         .title {
-            position: absolute;
-            top: 30%;
-            width: 100%;
-            left: 1%;
+
+	    div {
+		position: absolute;
+		top: 0px;
+		left: 0;
+		width: 100%;
+	    }
 
             h1, h2, h3, h4, h5, h6 {
                 color: white;
             }
 
-            h1 {
-                font-size: 4rem;
-                width: 45%;
+	    // title slide with subheading on the right side and "infinity image" at bottom
+	    //
+	    //   h1 32pt medium, width 5.1" (612), bottom-aligned bottom 3.9" (468), left 0.8", height 1" (120)
+	    //   h2 18pt light, width 3.8" (456), height 1", top 2.7" (320), left 8.75" (1050)
+	    // Note these are inside "section", thus the section margins have to be subtracted.
+	    // Subtraction between different units (% and px) is unsupported, thus absolute values here:
+	    // 60px = 0.5" = $section-top-margin
+	    // 96px = 0.8" = $section-left-margin
+           h1 {
+		position: absolute;
+		left: 0;
+                width: 612px;
+		bottom: 468px - 60px;
+		float: left;
             }
 
             h2 {
-                font-size: 2.5rem;
-                position: absolute;
-                left: 55%;
-                top: 0%;
-                width: 35%;
-            }
-
-            h3 {
-                font-size: 2rem;
+		position: absolute;
+                left: 1050px - 96px;
+                width: 456px;
+		bottom: 468px - 60px;
+		// ODP: subheading: 18pt
+		font-size: 30px;
             }
         }
 
 
         text-align: inherit;
 
-        h2, h3, h4, h5, h6 {
-            font-weight: normal;
-        }
 
         .qr-embedded {
             position: absolute;
