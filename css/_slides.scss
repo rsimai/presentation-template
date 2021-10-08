@@ -185,14 +185,15 @@
                 margin-left: -$bullet-padding;
             }
 
-            // Nested lists get hyphens not bullets, and
-            // get progressively smaller fonts.
+            // Nested lists get hyphens not bullets
             ul, ol {
                 li:before {
                     content: $list-hyphen;
                 }
 
-                font-size: 0.8em;
+		li {
+		    font-size: 27px;
+		}
             }
         }
 
