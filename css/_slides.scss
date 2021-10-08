@@ -9,7 +9,58 @@
         width: 100%;
         height: 100%;
 
-        section {
+	h1, h2, h3, h4, h5, h6, div, span, ul, ol, pre, th, td {
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+
+	h1 {
+	    // ODP: Poppins medium (500) 32pt => 54px
+	    font-weight: 500;
+	    font-size:  54px;
+	    line-height: 1.1;
+	}
+
+	h2 {
+	    // ODP: Poppins light (300) 20pt => 35px
+	    // Note that dividers / title slides 
+	    font-size:  35px;
+	    line-height: 1.1;
+	}
+
+	h3 {
+	    font-weight: 500;
+	}
+
+	//   "copy text" 18pt (30px) light
+	//   "copy text small" 16 pt (27px) light
+	//   footnotes 14 pt light  (23px)
+
+	small {
+	    font-size: 27px;
+	}
+
+	sup, sub {
+	    font-size: 23px;
+	}
+
+	// ODP:  "labels" (current font size) medium
+	strong {
+	    font-weight: 500;
+	    color: $pine;
+	}
+
+	table th {
+	    font-weight: 400;
+	}
+
+	tt, code, code * {
+            font-weight: 400;
+            text-shadow: none;
+            text-transform: none;
+	}
+
+	section {
             /* Margin percentages (e.g. 5%) are treated as being relative to the
             containing element's *width*, even the top and bottom margins. */
             margin: $section-top-margin / $aspect-ratio $section-left-margin;
@@ -76,33 +127,12 @@
         align-items: center;
     }
 
-    h1 {
-        font-size: 3.6rem;
-        font-weight: bold;
-        margin-top: 1rem;
-    }
-
-    h2 {
-        font-size: 3.2rem;
-        font-weight: bold;
-        margin-top: 2rem;
-        margin-bottom: 0.2rem;
-    }
-
     ul + h3, ul + p {
         margin-top: 0.8em;
     }
 
     li + li {
         margin-top: 0.4em;
-    }
-
-    h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $jungle;
-        margin-top: 0.2rem;
-        margin-bottom: 1.5rem;
     }
 
     p {
@@ -120,11 +150,7 @@
     }
 
     .progress span {
-        background-color: black
-    }
-
-    sup, sub {
-        font-size: 40%;
+        background-color: black;
     }
 
     sup {
@@ -135,10 +161,6 @@
 
     sub {
         vertical-align: baseline;
-    }
-
-    pre {
-        font-size: 1.6rem;
     }
 
     pre {

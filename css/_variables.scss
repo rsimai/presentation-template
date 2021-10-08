@@ -1,15 +1,24 @@
 $debug: none;
 //$debug: solid;
 
+// Sizes of ODP template:
+//   slide: 13.33" x 7.5"
+//   => pt->px conversion factor: 5/3 = 1.67  (1pt = 1/72")
+//      inch->px factor: 120
+//   left/right margin: 0.8"  = 96px
+//   top/bottom margin: ~0.5" = 60px
+
 // If you change these, make sure width/height in the Reveal.initialize()
 // call are also updated accordingly:
+// Also, note that font sizes and spacings have been calculated in pixels
+// to achieve the same ratios as in the ODP template.
 $slide-width: 1600;
 $slide-height: 900;
 
 $aspect-ratio: $slide-width / $slide-height;
 
 $section-left-margin: 5%;
-$section-top-margin: 5%;
+$section-top-margin: 6%;
 $section-width: 100% - 2 * $section-left-margin;
 $section-height: 100% - 2 * $section-top-margin;
 
