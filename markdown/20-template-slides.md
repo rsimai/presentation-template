@@ -79,7 +79,7 @@
 
 
 <!-- .slide: data-state="divider" id="divider" data-timing="20s" data-menu-title="Divider with image" -->
-# This is a divider with an image
+# This is a divider slide with image
 
 ## This is a subheading if you wish to add further details to the slide. Ignore if you don't.
 
@@ -135,6 +135,51 @@ Sizes can vary: append `-small` or `-large` to the style name
 ![Image in column two](../images/beach-pano-16x9.jpg)
 
 <!-- .element class="column" -->
+
+
+<!-- .slide: data-state="normal" id="multicolumn" -->
+# Multi-column layout with "multicol"
+
+<div class="multicol">
+  <div class="col"  data-markdown>
+    <h2>first column</h2>
+    <ul>
+    <li>one</li>
+    <li>four is somewhat longer, wraps.</li>
+    </ul>
+  </div>
+  <div class="col" style="flex-grow: 2;" data-markdown>
+    <h2>second column - double wide</h2>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+    </ul>
+    This column is twice as wide as the other ones, becaue it
+    uses the <tt>flex-grow: 2</tt> attribute.
+  </div>
+  <div class="col" data-markdown>
+    <h2>Last column</h2>
+    <ul>
+      <li>an item</li>
+      <li>another item</li>
+    </ul>
+  </div>
+</div>
+<div>
+  <pre>
+    <code class="html">
+      <div class="multicol">
+        <div class="col">...</div>
+        <div class="col" style="flex-grow: 2;">...</div>
+      </div>
+    </code>
+  </pre>
+</div>
+<div>
+  You need to add the `data-markdown` attribute to the
+  `class="col"` elements to use markdown inside. This doesn't work on incuded
+  markdown files unfortunately, only in <tt>index.html</tt>.
+</div>
 
 
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->
