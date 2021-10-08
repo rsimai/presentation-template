@@ -36,6 +36,49 @@
                      data-separator-vertical="^\n\n"
                      data-separator-notes="^Note:">
             </section>
+	    <section data-state="normal">
+	    <section>
+	      <h1>Multi-column layout</h1>
+	      <div class="multicol">
+		<div class="col"  data-markdown>
+		  ## first column
+
+		  * one
+		  * four is somewhat longer, wraps.
+		</div>
+		<div class="col" style="flex-grow: 2;" data-markdown>
+		  ## second column - double wide
+
+		  * one
+		  * two
+
+		  This column is twice as wide as the other ones, thus
+		  I can put a long sentence here.
+		</div>
+		<div class="col" data-markdown>
+		  ## Last column
+
+		  * an item
+		  * another item
+		</div>
+	      </div>
+	      <div>
+		<pre>
+		  <code class="html">
+		    <div class="multicol">
+		      <div class="col">...</div>
+		      <div class="col" style="flex-grow: 2;">...</div>
+		    </div>
+		  </code>
+		</pre>
+	      </div>
+	      <div data-markdown>
+		Used directly from `index.html`, markdown can be used by
+		adding the `data-markdown` attribute to the
+		`div` elements that contain markdown.
+	      </div>
+	    </section>
+	    </section>
             <section data-markdown="markdown/90-postscript.md"
                      data-separator="^\n\n\n"
                      data-separator-vertical="^\n\n"
