@@ -1,65 +1,55 @@
 @mixin copyright($fg: $pine, $bg: white) {
     $chameleon: if($fg == white, 'chameleon-white.svg', 'chameleon.svg');
-    .slide-number-wrapper {
-        > a {
-            position: absolute;
-            height: 100%;
-            width: 100%;
+    .slide-number {
+
+        &:after {
+            content: "Copyright © SUSE 2021";
+	    display: inline-block;
+            color: $fg;
+	    // distance to actual slide number
+	    margin-left: 0;
         }
 
         &:before {
-            position: absolute;
-            left: 10%;
-            bottom: $section-top-margin;
-            content: "Copyright © SUSE 2021";
-            margin-left: 6em;
-            font-size: 0.5em;
-            color: $fg;
-            z-index: 1;
-        }
-        &:after {
-            content: '';
-            width: 5%;
-            height: 5%;
-            position: absolute;
-            bottom: $section-top-margin - 1%;
-            left: 7%;
-            background: url('../images/SUSE/' + $chameleon)
-              0% 0% / 100% 100%;
-            z-index: 1;
+            content: url('../images/SUSE/' + $chameleon);
+	    display: inline-block;
+	    vertical-align: middle;
+	    // Width should match scale
+	    // Orig image width is 105px
+	    transform: scale(0.5);
+	    width: 55;
+	    // distance to actual slide number
+	    margin-right: 0;
         }
     }
 }
 
 @mixin slide-numbers($fg: $pine, $bg: white) {
-    .slide-number-wrapper {
-        > a {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-
             .slide-number {
-                position: relative;
+                position: absolute;
 
                 // Unfortunately reveal.js sets dom.slideNumber.style.display
                 // in the code so we need !important to override it.  This
                 // overrides the slideNumber config option, but slide numbers
                 // are part of this theme anyway.
-                display: inline-block !important;
+                // display: inline-block !important;
 
-                left: $section-width;
-                top: 92%;
-                font-size: 5pt;
-                border-radius: 20%;
-                background-color: $bg;
-                color: $fg;
-                span {
-                    font-size: 3em;
-                }
+		// The slide number is not placed inside the slide (.slides section),
+		// but inside the viewport, which may be much larger than the slide itself.
+		// The values below work well for slides in 16:9 full-screen mode
+                left: 0.7 * $section-left-margin;
+                bottom: 0.20 * $section-top-margin;
+		// Make sure it doesn't hide slide borders or progress bar
+                background-color: transparent;
+		z-index: 1;
 
+		span {
+                    font-size: 14px;
+                    color: $fg;
+		    display: inline-block;
+		    transform: translateX(1200px);
+		}
             }
-        }
-    }
     @include copyright($fg, $bg);
 }
 
