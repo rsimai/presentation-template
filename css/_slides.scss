@@ -141,21 +141,9 @@
         font-size: 1.6rem;
     }
 
-    tt, code, code * {
-        font-family: "Courier New", monospace !important;
-        font-weight: bold;
-    }
-
     pre {
         box-shadow: none;
         padding: 13px 13px;
-    }
-
-    pre code {
-        font-family: "Source Code Pro", monospace !important;
-        font-weight: normal;
-        text-shadow: none;
-        text-transform: none;
     }
 
     section {

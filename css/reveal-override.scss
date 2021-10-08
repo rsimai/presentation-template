@@ -5,11 +5,21 @@
 @import '_suse-colors';
 
 .reveal {
-    h1, h2, h3, h4, h5, h6, div, span {
-        font-family: "Arial", sans-serif;
+
+    h1, h2, h3, h4, h5, h6, div, span, ul, ol, pre, th, td {
+	font-family: "Poppins", Verdana, Arial, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 300;
     }
 
     font-size: 2rem;
+    tt, code, code * {
+        font-family: "Roboto mono", monospace;
+        font-weight: 400;
+        text-shadow: none;
+        text-transform: none;
+    }
 
     @import '_slides';
 
