@@ -10,7 +10,7 @@ Reveal.initialize({
 
     controls: true, // press C to toggle
     controlsTutorial: true,
-    slideNumber: true,
+    slideNumber: "c",
     progress: true,
     history: true,
     center: false,
