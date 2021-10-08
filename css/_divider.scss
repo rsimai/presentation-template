@@ -5,7 +5,7 @@
         background:
             url(../images/SUSE/top-bar.png)
                0% 0%
-            / 100% 0.5%
+            / 100% 1%
                no-repeat,
             linear-gradient(180deg, $midnight 70%, $waterhole 30%) !important;
     }
@@ -16,7 +16,7 @@
         background:
             url(../images/SUSE/top-bar.png)
                0% 0%
-            / 100% 0.5%
+            / 100% 1%
                no-repeat,
             linear-gradient(180deg, $pine 70%, $jungle 30%);
 
@@ -62,7 +62,7 @@
         background:
             url(../images/SUSE/top-bar.png)
                0% 0%
-            / 100% 0.5%
+            / 100% 1%
                no-repeat,
             $jungle;
 
@@ -102,7 +102,8 @@
 }
 
 
-/* divider customization to have an image covering the right-half part of the slide entirely */
+/* divider customization to have an image covering  a square area (width = height) 
+   on the right side entirely */
 #divider, #divider-blue,
 #subdivider, #subdivider-blue {
     margin: 0;
@@ -115,7 +116,7 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 50%;
+        width: 900px;
         overflow: hidden;
 
         img {
@@ -128,7 +129,7 @@
             left: auto;
             right: auto;
             border-radius: 0;
-            padding-top: 4px;
+            padding-top: 1%;
         }
     }
 }
