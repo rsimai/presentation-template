@@ -80,6 +80,11 @@
             margin-bottom: 0;
         }
 
+	ul + h3, ul + p, ol + h3, ol + p {
+            margin-top: 0.8em;
+	}
+
+
         img {
             display: block;
             margin-left: auto;
