@@ -12,8 +12,9 @@
 
             ol {
                 padding-left: 1.5em;
-                left: 45%;
-                position: relative;
+                right: 0;
+                width: 65%;
+                position: absolute;
 
                 .highlight {
                     color: $persimon;
@@ -21,7 +22,6 @@
 
                 li {
                     color: $jungle;
-                    font-size: 3rem;
                     margin-top: 3rem;
                     line-height: 0;
 
@@ -36,9 +36,9 @@
                         box-shadow: none;
                         background: none;
                         margin: 0;
-                        width: 100%;
                         padding: 0;
                         font-style: normal;
+			width: 100%;
                     }
                 }
             }
