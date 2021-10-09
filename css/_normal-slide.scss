@@ -97,15 +97,6 @@
             margin-bottom: 1em;
 	}
 
-	// Work around a browser "quirk" that resets all font attributes
-	// in tables with "initial"
-	table {
-	    font-size: inherit;
-	    font-weight: inherit;
-	    font-style: inherit;
-	    font-variant: inherit;
-	}
-
 	// reveal.js sets .reveal .hljs height to 100%, always (??)
 	.hljs {
 	    min-height: 0;
