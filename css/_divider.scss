@@ -41,15 +41,6 @@
 
 }
 
-@mixin background_colors($col1, $col2) {
-    background:
-        url(../images/SUSE/top-bar.png)
-        0% 0%
-        / 100% 1%
-        no-repeat,
-        linear-gradient(180deg, $col1 70%, $col2 30%) !important;
-}
-
 .blue .reveal {
     .slides {
 	@include background_colors($midnight, $waterhole);

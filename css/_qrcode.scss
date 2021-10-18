@@ -3,11 +3,7 @@
         @include no-slide-numbers;
     }
     .slides {
-        background:
-            url(../images/SUSE/top-bar.png)
-               0% 0%
-            / 100% 0.5%
-               no-repeat;
+	@include background-colors;
     }
 
     img {

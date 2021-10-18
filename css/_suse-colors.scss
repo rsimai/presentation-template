@@ -10,3 +10,12 @@ $waterhole:           #2453FF;
 $mint:                #90EBCD;
 $persimon:            #FE7C3F;
 $fog:                 #EFEFEF;
+
+@mixin background_colors($col1: white, $col2: white) {
+    background:
+        url(../images/SUSE/top-bar.png)
+        0% 0%
+        / 100% 1%
+        no-repeat,
+        linear-gradient(180deg, $col1 70%, $col2 30%) !important;
+}
