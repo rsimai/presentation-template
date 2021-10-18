@@ -12,8 +12,6 @@
 
 @mixin cover($bg_image) {
     .slides {
-        margin: 0;
-
         .pdf-page, > section {
             width: 100%;
             height: 100%;
