@@ -1,5 +1,46 @@
 // Styling for the dividers
 
+@mixin divider_layout {
+    img {
+        position: absolute;
+        height: 100%;
+        max-height: 100%;
+        width: 900px;
+        max-width: 900px;
+        margin: 0;
+        right: 0;
+	bottom: 0;
+        border-radius: 0;
+        padding-top: 1%;
+        overflow: hidden;
+	object-fit: contain;
+    }
+
+    // divider slide ODS template (see _variables.scss)
+    // h1 32pt medium, top margin 3" (360), width 4" (480), left 0.8"
+    // h2 title 18pt light, top 5,5" (660)
+    h1, h2 {
+        text-align: left;
+        color: white;
+        float: left;
+        width: 480px;
+	left: $section-left-margin;
+        position: absolute;
+	margin: 0;
+    }
+
+    h1 {
+	bottom: 360px;
+    }
+
+    h2 {
+	// ODP: subheading: 18pt
+	font-size: 30px;
+        top: 660px;
+    }
+
+}
+
 .blue .reveal {
     .slides {
         background:
@@ -20,43 +61,7 @@
                no-repeat,
             linear-gradient(180deg, $pine 70%, $jungle 30%);
 
-        img {
-            position: absolute;
-            height: 100%;
-            max-height: 100%;
-            width: 900px;
-            max-width: 900px;
-            margin: 0;
-            right: 0;
-	    bottom: 0;
-            border-radius: 0;
-            padding-top: 1%;
-            overflow: hidden;
-	    object-fit: contain;
-        }
-
-	// divider slide ODS template (see _variables.scss)
-	// h1 32pt medium, top margin 3" (360), width 4" (480), left 0.8"
-	// h2 title 18pt light, top 5,5" (660)
-        h1, h2 {
-            text-align: left;
-            color: white;
-            float: left;
-            width: 480px;
-	    left: $section-left-margin;
-            position: absolute;
-	    margin: 0;
-        }
-
-	h1 {
-	    bottom: 360px;
-	}
-
-        h2 {
-	    // ODP: subheading: 18pt
-	    font-size: 30px;
-            top: 660px;
-        }
+	@include divider_layout;
     }
 
     @include slide-numbers(white, $pine);
@@ -72,57 +77,21 @@
                no-repeat,
             $jungle;
 
-        img {
-            width: 60%;
-            height: 85%;
-            position: relative;
-            border-radius: 5%;
-            display: block;
-            left: 40%;
-        }
-
-	// subdivider slide ODS template (see _variables.scss)
-	// h1 32pt medium, bottom 3.7" (404), width 4" (480), left 0.8"
-	// h2 title 18pt light, top 5,5" (660)
-        h1, h2 {
-            text-align: left;
-            color: white;
-            float: left;
-            width: 480px;
-	    left: $section-left-margin;
-            position: absolute;
-	    margin: 0;
-        }
-
-	h1 {
-	    bottom: 360px;
-	}
-
-        h2 {
-	    font-size: 30px;
-            top: 660px;
-        }
-
-        img {
-            position: absolute;
-            height: 100%;
-            max-height: 100%;
-            width: 900px;
-            max-width: 900px;
-            margin: 0;
-            left: auto;
-            right: auto;
-	    bottom: 0;
-            border-radius: 0;
-            padding-top: 1%;
-            overflow: hidden;
-	    object-fit: contain;
-        }
+	@include divider_layout;
     }
 
     @include slide-numbers(white, $pine);
 }
 
+.pdf-page > .divider {
+
+    @include divider_layout;
+}
+
+.pdf-page > .subdivider {
+
+    @include divider_layout;
+}
 
 /* divider customization to have an image covering  a square area (width = height) 
    on the right side entirely */
