@@ -43,7 +43,8 @@ Reveal.configure({
             Reveal.configure({ controls: ! Reveal.getConfig()['controls'] });
         },
     },
-    pdfSeparateFragments: false
+    pdfSeparateFragments: false,
+    pdfMaxPagesPerSlide: 1
 });
 
 // Left/right mouse click to advance to next / previous slides.
