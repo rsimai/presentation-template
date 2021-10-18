@@ -124,4 +124,9 @@
 .reveal .slides .pdf-page {
 
     @include normal_style;
+
+    h1 {
+	margin-top: 54px;
+    }
+
 }
