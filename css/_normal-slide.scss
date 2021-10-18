@@ -106,12 +106,7 @@
     $slide-width: 100% - 2 * $section-left-margin;
 
     .slides {
-        background:
-            url(../images/SUSE/top-bar.png)
-               0% 0%
-            / 100% 1%
-               no-repeat;
-
+	@include background_colors;
         text-align: inherit;
         color: $pine !important;
 
@@ -129,4 +124,7 @@
 	margin-top: 54px;
     }
 
+    > section:not(.cover) {
+	@include background_colors;
+    }
 }
