@@ -1,5 +1,107 @@
 // Styling for normal slides
 
+@mixin normal_style {
+    // normal slide
+
+    // There's ~1" between heading and slide text ("copy text")
+    // It's below the h1 heading if no subheading exists, below the h2 heading otherwise
+    // ODP: h1 headline 32pt (54px) medium, spacing 0.9, after 6pt, top 0.8"
+    h1 {
+        margin-bottom: 120px;
+        color: $pine;
+    }
+
+    // ODP: h2 headline 20pt (35px) light, spacing 1.1, spacing after 6pt, top 1.2"
+    h2 {
+        color: $pine;
+    }
+
+    h3 {
+        margin-top: 0.2rem;
+        margin-bottom: 1.5rem;
+        color: $jungle;
+    }
+
+    // "Subheading": h2 direcly after h1 - large vertical space after h2
+    h1 + h2 {
+        margin-bottom: 100px;
+        margin-top: -100px;
+    }
+
+    .column {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .column-small {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .column-large {
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .multicol {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 2rem;
+	// multi-column in LO template ~ 0.2"
+	gap: 24px;
+    }
+
+    .col {
+	flex: 1 0 1px;
+    }
+
+    .footnote {
+	font-size: 24px;
+	bottom: 30px;
+	position: absolute;
+    }
+
+    p {
+        margin-bottom: 0.4em;
+    }
+
+    li > p {
+        margin-bottom: 0;
+    }
+
+    ul + h3, ul + p, ol + h3, ol + p {
+        margin-top: 0.8em;
+    }
+
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img.full-slide {
+        width: 80%;
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    // Proper distance below tables
+    table {
+        margin-bottom: 1em;
+    }
+
+    // reveal.js sets .reveal .hljs height to 100%, always (??)
+    .hljs {
+	min-height: 0;
+    }
+}
+
 .normal .reveal {
     $slide-width: 100% - 2 * $section-left-margin;
 
@@ -13,106 +115,13 @@
         text-align: inherit;
         color: $pine !important;
 
-	// normal slide
-
-	// There's ~1" between heading and slide text ("copy text")
-	// It's below the h1 heading if no subheading exists, below the h2 heading otherwise
-
-	// ODP: h1 headline 32pt (54px) medium, spacing 0.9, after 6pt, top 0.8"
-        h1 {
-            margin-bottom: 120px;
-            color: $pine;
-        }
-
-	// ODP: h2 headline 20pt (35px) light, spacing 1.1, spacing after 6pt, top 1.2"
-        h2 {
-            color: $pine;
-        }
-
-	h3 {
-            margin-top: 0.2rem;
-            margin-bottom: 1.5rem;
-            color: $jungle;
-	}
-
-	// "Subheading": h2 direcly after h1 - large vertical space after h2
-        h1 + h2 {
-            margin-bottom: 100px;
-            margin-top: -100px;
-        }
-
-        .column {
-            width: 45%;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .column-small {
-            width: 20%;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .column-large {
-            width: 70%;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-	.multicol {
-	    padding: 0;
-	    display: flex;
-	    justify-content: center;
-	    align-items: flex-start;
-	    margin-bottom: 2rem;
-	    // multi-column in LO template ~ 0.2"
-	    gap: 24px;
-	}
-	.col {
-	    flex: 1 0 1px;
-	}
-
-	.footnote {
-	    font-size: 24px;
-	    bottom: 30px;
-	    position: absolute;
-	}
-
-        p {
-            margin-bottom: 0.4em;
-        }
-
-        li > p {
-            margin-bottom: 0;
-        }
-
-	ul + h3, ul + p, ol + h3, ol + p {
-            margin-top: 0.8em;
-	}
-
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        img.full-slide {
-            width: 80%;
-            max-width: 80%;
-            max-height: 80%;
-        }
-
-	// Proper distance below tables
-	table {
-            margin-bottom: 1em;
-	}
-
-	// reveal.js sets .reveal .hljs height to 100%, always (??)
-	.hljs {
-	    min-height: 0;
-	}
+	@include normal_style;
     }
 
     @include slide-numbers;
+}
+
+.reveal .slides .pdf-page {
+
+    @include normal_style;
 }
