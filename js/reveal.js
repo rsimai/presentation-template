@@ -42,7 +42,8 @@ Reveal.configure({
         67: function() {
             Reveal.configure({ controls: ! Reveal.getConfig()['controls'] });
         },
-  }
+    },
+    pdfSeparateFragments: false
 });
 
 // Left/right mouse click to advance to next / previous slides.
