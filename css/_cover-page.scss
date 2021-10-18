@@ -71,6 +71,7 @@
                 width: 612px;
 		bottom: 468px - 60px;
 		float: left;
+		margin-bottom: 0em;
             }
 
             h2 {
@@ -80,6 +81,7 @@
 		bottom: 468px - 60px;
 		// ODP: subheading: 18pt
 		font-size: 30px;
+		margin-bottom: 0em;
             }
         }
 
@@ -109,10 +111,6 @@
                 }
             }
         }
-    }
-
-    h1, h2, h3 {
-        margin-bottom: 0em;
     }
 
     @include no-slide-numbers;
