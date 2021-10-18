@@ -19,7 +19,7 @@
         $y-offset: 0;
         margin: 0;
 
-        > section {
+        .pdf-page, > section {
             width: 100%;
             height: 100%;
         }

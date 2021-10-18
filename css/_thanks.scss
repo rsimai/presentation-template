@@ -9,7 +9,7 @@
         $y-offset: 0;
         margin: 0;
 
-        > section {
+        > .pdf-page, > section {
             /* Margin percentages (e.g. 5%) are treated as being relative to the
             containing element's *width*, even the top and bottom margins. */
             margin: $section-top-margin / $aspect-ratio $section-left-margin;
