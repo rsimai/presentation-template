@@ -41,26 +41,24 @@
 
 }
 
+@mixin background_colors($col1, $col2) {
+    background:
+        url(../images/SUSE/top-bar.png)
+        0% 0%
+        / 100% 1%
+        no-repeat,
+        linear-gradient(180deg, $col1 70%, $col2 30%) !important;
+}
+
 .blue .reveal {
     .slides {
-        background:
-            url(../images/SUSE/top-bar.png)
-               0% 0%
-            / 100% 1%
-               no-repeat,
-            linear-gradient(180deg, $midnight 70%, $waterhole 30%) !important;
+	@include background_colors($midnight, $waterhole);
     }
 }
 
 .divider .reveal {
     .slides {
-        background:
-            url(../images/SUSE/top-bar.png)
-               0% 0%
-            / 100% 1%
-               no-repeat,
-            linear-gradient(180deg, $pine 70%, $jungle 30%);
-
+	@include background_colors($pine, $jungle);
 	@include divider_layout;
     }
 
@@ -83,13 +81,15 @@
     @include slide-numbers(white, $pine);
 }
 
-.pdf-page > .divider {
+.reveal .slides .pdf-page > section.divider {
 
+    @include background_colors($pine, $jungle);
     @include divider_layout;
 }
 
-.pdf-page > .subdivider {
+.reveal .slides .pdf-page > section.subdivider {
 
+    @include background_colors($pine, $jungle);
     @include divider_layout;
 }
 
