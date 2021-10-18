@@ -2,7 +2,7 @@
     box-shadow: 2px 2px 20px;
     border: $debug 2px magenta;
 
-    > section {
+    > .pdf-page, > section {
         border: $debug 2px red;
         margin: 0;
         padding: 0;
