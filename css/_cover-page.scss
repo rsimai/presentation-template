@@ -17,7 +17,8 @@
             height: 100%;
         }
 
-        background:
+        div.cover, > section {
+	    background:
             url(../images/SUSE/SUSE-logo.svg)
                5% 5%              //  x/y positions
              / 15% 15%              //  x/y sizes
@@ -27,6 +28,7 @@
              / 100% 40%
                no-repeat,
             $pine;
+	}
 
         position: relative;
 
