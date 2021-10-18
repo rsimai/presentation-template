@@ -1,48 +1,57 @@
 // Styling for agenda slides
 
-.toc .reveal {
-    .slides {
-        section {
-            h1 {
-                position: relative;
-                width: 35%;
-                top: 35%;
-                margin: 0;
+@mixin toc_layout {
+    h1 {
+        position: relative;
+        width: 35%;
+        top: 35%;
+        margin: 0;
+    }
+
+    ol {
+        padding-left: 1.5em;
+        right: 0;
+        width: 65%;
+        position: absolute;
+
+        .highlight {
+            color: $persimon;
+        }
+
+        li {
+            color: $jungle;
+            margin-top: 3rem;
+            line-height: 0;
+
+            p {
+                margin-bottom: 0;
+                display: inline;
             }
 
-            ol {
-                padding-left: 1.5em;
-                right: 0;
-                width: 65%;
-                position: absolute;
-
-                .highlight {
-                    color: $persimon;
-                }
-
-                li {
-                    color: $jungle;
-                    margin-top: 3rem;
-                    line-height: 0;
-
-                    p {
-                        margin-bottom: 0;
-                        display: inline;
-                    }
-
-                    blockquote {
-                        color: $pine;
-                        font-size: 2rem;
-                        box-shadow: none;
-                        background: none;
-                        margin: 0;
-                        padding: 0;
-                        font-style: normal;
-			width: 100%;
-                    }
-                }
+            blockquote {
+                color: $pine;
+                font-size: 2rem;
+                box-shadow: none;
+                background: none;
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+		width: 100%;
             }
         }
     }
 }
 
+.toc .reveal {
+    .slides section {
+	@include toc_layout;
+    }
+}
+
+.reveal .slides .pdf-page > section.toc {
+    @include toc_layout;
+    // hack because pdf-page has no margins
+    ol {
+	margin-top: 54px;
+    }
+}
