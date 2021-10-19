@@ -6,7 +6,7 @@ Reveal.initialize({
     width: 1600,
     height: 900,
 
-    margin: 0.05,
+    margin: 0.01,
 
     controls: true, // press C to toggle
     controlsTutorial: true,
