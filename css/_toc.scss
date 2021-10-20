@@ -3,15 +3,22 @@
 @mixin toc_layout {
     h1 {
         position: relative;
-        width: 35%;
+        width: 560px;
         top: 35%;
         margin: 0;
     }
 
-    ol {
-        padding-left: 1.5em;
+    > p {
         right: 0;
-        width: 65%;
+	bottom: 90px;
+        width: 1040px;
+        position: absolute;
+    }
+
+    ol {
+        padding-left: 45px;
+        right: 0;
+        width: 995px; // 1040 - padding!
         position: absolute;
 
         .highlight {
