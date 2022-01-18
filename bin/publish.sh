@@ -1,4 +1,5 @@
 #! /bin/sh
+trap 'echo "$0: error in command \"$BASH_COMMAND\"" >&2; exit 1' ERR
 
 mkdir -p public
 rsync -ric --exclude=/public \
