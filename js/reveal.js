@@ -21,7 +21,8 @@ Reveal.initialize({
     transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
 
     // Optional libraries used to extend on reveal.js
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom, RevealMath ],
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom ],
+    // Disabled: RevealMath, which depends on MathJax
 
     menu: {
         themes: false,
