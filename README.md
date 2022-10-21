@@ -71,6 +71,12 @@ advantages over LibreOffice Impress:
     -   [`shellinabox`](https://github.com/shellinabox/shellinabox) - do
         live demos from within a shell embedded in a slide
 
+    -   [`stermie`](https://github.com/ddiss/stermie/) - connect to a QEMU
+        virtual machine from a terminal window embedded in a slide, e.g.
+        start QEMU with `-serial websocket:127.0.0.1:45252,server,nowait`
+        then add to a slide:
+        `<iframe src="https://ddiss.github.io/stermie/#url=ws://127.0.0.1:45252 />`
+
     -   Use any Javascript library to dynamically generate content,
         e.g. [`git` commit graphs](https://sap-oc.github.io/openstack-boston-presentation/#/github-branches-tags)
 
