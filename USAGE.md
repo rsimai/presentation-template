@@ -129,7 +129,7 @@ Python 2:
 
 Python 3:
 
-    python -m http.server 8000
+    python3 -m http.server -b localhost 8000
 
 #### Apache
 
